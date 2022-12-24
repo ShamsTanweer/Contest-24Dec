@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contest-24Dec</title>
+  </head>
+  <body>
+    <h3>Filter ui cards via their profession.</h3>
+
+    <form name="forSelect" action="" method="post">
+      <select name="profession" id="profession">
+        <option value="">Profession</option>
+        <option value="Admin">Admin</option>
+        <option value="Developer">Developer</option>
+      </select>
+      <div>
+        <p id="error" style="color: red; display: block"></p>
+      </div>
+
+      <div id="arrData"></div>
+
+      <button id="btn" type="submit">Filter</button>
+    </form>
+
+    <br /><br /><br /><br /><br />
+
+    <h3>Add a new user</h3>
+    <form name="forAdd" method="post" action="">
+      <label for="name">Enter Name</label>
+      <input type="text" id="name" name="name" />
+      &nbsp; &nbsp; &nbsp;
+
+      <label for="profession">Enter Profession</label>
+      <input type="text" id="profession" name="profession" />
+      &nbsp; &nbsp; &nbsp;
+
+      <label for="age">Enter Age</label>
+      <input type="number" id="age" name="age" />
+      <br /><br />
+
+      <button id="btn1" type="submit">Add User</button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
